@@ -1,0 +1,69 @@
+1. Projekt kiválasztása
+- ASP.NET Core (MVC)
+- Do not use top level
+- HTTPS off
+- alapértelmezett böngészől
+
+2. NuGet packages hozzáadása
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Sqlite
+- Microsoft.EntityFrameworkCore.Tools
+
+3. Projekt
+- Models -> Add -> Class: Hero, Class: Item
+- Add props és [Data Annotations]
+	-> NAGYON FONTOS, HOGY JÓ LEGYEN! KÉSŐBB EBBŐL GENERÁL!
+	[Key]
+	[Required]
+	[Display(Name = "Hősnév")]
+	[ForeignKey("ReferencedHero")]
+- Add 'Context' folder
+- Add Class: EFContect : DBContext -> teleír
+- Add 'DB' folder
+
+4. .NET 6 változások
+- Nincs Startup.cs bele lett rakva a Program.cs-be
+- beilleszteni a metódusokat
+
+5. DB Kapcsolat Generálás
+- Tools -> NuGet Package Manager -> Package Manager Console
+- Add-Migration InitialMigration parancs
+	-> 'Migrations' folder legenerálva
+- Update-Database parancs
+	-> db legenerálva
+
+6. Controllerek hozzáadása
+Heroes:
+- 'Controllers' -> Add -> New ->
+	Controller -> MVC Controller with Views, using Entity Framework
+- Model class: Hero
+- Data context class: EFContext
+- Controller Name: HeroesController
+
+Items:
+- Model class: Item
+- Data context class: EFContext
+- Controller Name: HeroesController
+
+8. Views 
+- Views/Shared/_Layout.cshtml szerkesztése
+- navigációs elem hozzáadása
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
