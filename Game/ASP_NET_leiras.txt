@@ -1,0 +1,10 @@
+- db műveletek (ado.net) összesen
+- mvc architektúra (legalább: dao, model, view)
+- Windows forms
+- Szubjektív vélemény a megoldásról (elnevezés, C# szerkezetek alkalmazása, kódolási stílus)
+
+
+NET WinForms alkalmazás létrehozása (.NET 6 LTS használatával),
+C# nyelvi elemek használata: Osztályok, interfacek, propertyk, delegatek létrehozása és használata,
+Adat beolvasása adatbázisból, illetve abba írása,
+WinForms segítségével UI elemek ablakok elkészítése.
